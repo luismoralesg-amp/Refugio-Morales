@@ -14,22 +14,22 @@ class Animal:
         self.energia += (gramos//10)
         if self.energia > 100:
             self.energia = 100
-            print("!! Para coche ¡¡")
-        print(f"Comiendo.... energía nueva: {self.energia}")
+            print("\n !! Para coche ¡¡")
+        print(f"\n({self.name}) esta Comiendo.... energía nueva: {self.energia}")
         
     def jugar(self):
         self.energia -= 20
         if self.energia < 0:
             self.energia = 0
-            print("Es hora de dormir")
-        print(f"jugando.... energía nueva: {self.energia}")
+            print("\n Es hora de dormir")
+        print(f"\n({self.name}) esta Jugando.... energía nueva: {self.energia}")
 
     def dormir(self):
         self.energia += 30
         if self.energia > 100:
             self.energia = 100
-            print("¡¡Deja de chingar!!")
-        print(f"Durmiendo.... energía nueva: {self.energia}")  
+            print("\n ¡¡Deja de chingar!!")
+        print(f"\n({self.name}) esta Durmiendo.... energía nueva: {self.energia}")  
         
 
     
